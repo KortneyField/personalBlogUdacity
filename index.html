@@ -15,12 +15,13 @@
     <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport"/>
 
   <style>
+      
     .navBar{
         display:flex;
         flex-direction: row; /* makes the boxes form a column or row*/
         align-items: center; /*aligns the boxes in the middle on cross axis*/
         justify-content: start; /*aligns the boxes in the middle on main axis all the way the right*/
-        border: 2px solid yellow;
+        /*border: 2px solid yellow;*/
     }
     
     .navTabs{
@@ -42,17 +43,24 @@
             grid-template-rows: 45vh 45vh 45vh;
             grid-gap: 25px; 
             grid-template-areas: 
-            "box1 box2"
-            "box3 box2"
-            "box4";
-            border: 2px solid black;
+            "box1"
+            "box2"
+            "box3";
+            /*border: 2px solid black;*/
         }
 
         .box{
-            display: felx;
-            border: 2px solid red;
-            justify-content: stretch;
+            width: 400px;
+            /*border: 2px solid red;*/
         }
+
+        .postBox {display: grid;
+            grid-template-columns: 35vw 35vw;
+            grid-template-rows: 45vh;
+            grid-gap: 25px; 
+            grid-template-areas: "box1 box2";
+            /*border: 2px solid black;*/
+            }
 
 
   </style>
@@ -61,6 +69,7 @@
   <body>
     <div>
         <h1>Kortney's Kitchen</h1>
+        <img src="bambooSpoons.jpeg" alt="spoons">
     </div>
     
     <div class = "navBar">
@@ -70,10 +79,32 @@
         <div class="navTabs"> About</div>
     </div>
 
+    <div> <h2>Recent Posts</h2></div>
     <div class = " mainContainer">
-        <div class="box"> post #1 </div>
-        <div class="box"> post #2 </div>
-        <div class="box"> post #3 </div>
+        <div class="box"> 
+            <h3>Green Bean Casserole</h3>
+            <p> Lorem ipsum dolor sit amet, an soluta dissentiet quo, at mei dicam dicunt 
+                imperdiet. Gloriatur disputationi mediocritatem et vim, nostro reprimique 
+                mei ei, has facer recusabo assueverit eu. Congue vocibus at vel. Has at errem 
+                xpetenda assentior, odio viderer indoctum nam ad, pro iusto saperet id. His 
+                integre petentium moderatius an. </p>
+        </div>
+        <div class="box">  
+            <h3>Favorite Kitchen Gadgets</h3>
+            <p> Lorem ipsum dolor sit amet, an soluta dissentiet quo, at mei dicam dicunt 
+                imperdiet. Gloriatur disputationi mediocritatem et vim, nostro reprimique 
+                mei ei, has facer recusabo assueverit eu. Congue vocibus at vel. Has at errem 
+                xpetenda assentior, odio viderer indoctum nam ad, pro iusto saperet id. His 
+                integre petentium moderatius an. </p>
+        </div>
+        <div class="box"> 
+            <h3>Taco Ring</h3>
+            <p> Lorem ipsum dolor sit amet, an soluta dissentiet quo, at mei dicam dicunt 
+                imperdiet. Gloriatur disputationi mediocritatem et vim, nostro reprimique 
+                mei ei, has facer recusabo assueverit eu. Congue vocibus at vel. Has at errem 
+                xpetenda assentior, odio viderer indoctum nam ad, pro iusto saperet id. His 
+                integre petentium moderatius an. </p>
+        </div>
 
     </div>
   </body>
