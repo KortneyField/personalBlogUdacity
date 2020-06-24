@@ -34,33 +34,19 @@
             color: black;
             
         }
-
-        .mainContainer {
-            display: grid;
-            width: 400px;
-            justify-content: start;
-            grid-template-columns: 35vw ;
-            grid-template-rows: 45vh 45vh 45vh;
-            grid-gap: 25px; 
-            grid-template-areas: 
-            "box1"
-            "box2"
-            "box3";
-            /*border: 2px solid black;*/
+    .wrapper{
+        display:grid;
+        grid-template-columns: 70% 30%;
+        grid-column-gap: 1em;
+        grid-row-gap: 1em;
+        border: 2px solid yellow;
+    }
+    .wrapper>
+        div{
+            background:lightgray;
+            padding: 1em;
         }
-
-        .box{
-            width: 400px;
-            /*border: 2px solid red;*/
-        }
-
-        .postBox {display: grid;
-            grid-template-columns: 35vw 35vw;
-            grid-template-rows: 45vh;
-            grid-gap: 25px; 
-            grid-template-areas: "box1 box2";
-            /*border: 2px solid black;*/
-            }
+        
 
 
   </style>
@@ -69,7 +55,7 @@
   <body>
     <div>
         <h1>Kortney's Kitchen</h1>
-        <img src="bambooSpoons.jpeg" alt="spoons">
+        
     </div>
     
     <div class = "navBar">
@@ -79,32 +65,14 @@
         <div class="navTabs"> About</div>
     </div>
 
-    <div> <h2>Recent Posts</h2></div>
-    <div class = " mainContainer">
-        <div class="box"> 
-            <h3>Green Bean Casserole</h3>
-            <p> Lorem ipsum dolor sit amet, an soluta dissentiet quo, at mei dicam dicunt 
-                imperdiet. Gloriatur disputationi mediocritatem et vim, nostro reprimique 
-                mei ei, has facer recusabo assueverit eu. Congue vocibus at vel. Has at errem 
-                xpetenda assentior, odio viderer indoctum nam ad, pro iusto saperet id. His 
-                integre petentium moderatius an. </p>
+    <div class="wrapper">
+        <div>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae quos cum soluta tenetur molestiae vel quasi, harum facilis dolor aperiam unde maxime magni voluptatem, similique veritatis ut repellat itaque illum laborum dignissimos dolorum modi labore! Quisquam aperiam dolorum tempora, repellat nostrum laboriosam consequatur minus, assumenda iste sed culpa natus animi autem? Iste, voluptate doloremque? Laudantium repellendus nesciunt pariatur dolorum doloremque minima impedit animi enim quidem, nisi, placeat alias veritatis esse? Ex natus minima est perspiciatis quos eos. Recusandae, perferendis alias!
         </div>
-        <div class="box">  
-            <h3>Favorite Kitchen Gadgets</h3>
-            <p> Lorem ipsum dolor sit amet, an soluta dissentiet quo, at mei dicam dicunt 
-                imperdiet. Gloriatur disputationi mediocritatem et vim, nostro reprimique 
-                mei ei, has facer recusabo assueverit eu. Congue vocibus at vel. Has at errem 
-                xpetenda assentior, odio viderer indoctum nam ad, pro iusto saperet id. His 
-                integre petentium moderatius an. </p>
+        <div>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus a sit, quasi aperiam assumenda, alias, similique odit eaque praesentium esse ut ipsa ducimus soluta ratione quibusdam reiciendis reprehenderit molestias. Reiciendis!
         </div>
-        <div class="box"> 
-            <h3>Taco Ring</h3>
-            <p> Lorem ipsum dolor sit amet, an soluta dissentiet quo, at mei dicam dicunt 
-                imperdiet. Gloriatur disputationi mediocritatem et vim, nostro reprimique 
-                mei ei, has facer recusabo assueverit eu. Congue vocibus at vel. Has at errem 
-                xpetenda assentior, odio viderer indoctum nam ad, pro iusto saperet id. His 
-                integre petentium moderatius an. </p>
-        </div>
+    </div>
 
     </div>
   </body>
