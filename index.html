@@ -48,7 +48,42 @@
         }
     .wrapper > div:nth-child(even){
             background: lightpink;;
-        }    
+        }   
+
+    .postWrapper {
+        display:grid;
+        grid-template-columns: 40% 60%;
+        grid-gap: 1em;
+        text-align:start;
+        /*border: 2px solid black;*/
+        
+    } 
+    
+    .myButton {
+        background-color:#d2faf7;
+        border-radius:28px;
+        border:1px solid #171a17;
+        display:inline-block;
+        cursor:pointer;
+        color:#120812;
+        font-family:Arial;
+        font-size:17px;
+        padding:16px 31px;
+        text-decoration:none;
+        text-shadow:0px 1px 0px #070a07;
+    }
+    
+
+    .myButton:hover {
+        background-color:#f2cef2;
+    }
+    
+    .myButton:active {
+        position:relative;
+        top:1px;
+    }
+    
+
 
 
   </style>
@@ -61,19 +96,28 @@
     </div>
     
     <div class = "navBar">
-        <div class="navTabs"> Home </div>
+        <div class="navTabs"> <a href="index.html">Home</a> </div>
         <div class="navTabs"> Recipes</div>
-        <div class="navTabs"> Blog </div>
+        <div class="navTabs"> <a href="blogPost-3.html">Blog</a></div>
         <div class="navTabs"> About</div>
     </div>
 
     <div class="wrapper">
         <div>
-            <h3> Blog Post: 9 Favorite Kitchen Gadgets</h3>
-            <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia, sapiente! Ducimus totam ea sit itaque quis perferendis adipisci blanditiis asperiores similique, voluptas praesentium voluptates saepe! Incidunt expedita tenetur quo porro.</p>
+            <div class="postWrapper"> 
+                <div> 
+                    <h3> Blog Post #1: </h3>
+                    <h3> 9 Favorite Things: Kitchen Gadgets</h3>
+                    <a href="blogPost-3.html" class="myButton">Click Here</a>
+                </div>
+                <div> 
+                    <img src="images/favoriteThings.jpeg" width:"120px" height="200px" >
+                </div>
+            </div>
         </div>
         <div>
             <h2>About the Cook</h2>
+
         </div>
         <div>
             <h3> Recipe Post: Cowboy Casserole</h3>
