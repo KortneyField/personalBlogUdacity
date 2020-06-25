@@ -83,25 +83,50 @@
         top:1px;
     }
     
+    li {
+        float: left;
+    }
 
+    li a {
+        display: block;
+        padding: 8px;
+        background-color:#d2faf7;
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        }
+    
+        .mainTitle {
+            text-align: center;
+            font-weight: bold;
+            font-size: 55px;
+            }
+        
 
 
   </style>
   </head>
 
   <body>
+    <hr size="20" color="lightgray">  
     <div>
-        <h1>Kortney's Kitchen</h1>
-        
+        <h1 class="mainTitle" >Kortney's Kitchen</h1>
     </div>
     
-    <div class = "navBar">
-        <div class="navTabs"> <a href="index.html">Home</a> </div>
-        <div class="navTabs"> Recipes</div>
-        <div class="navTabs"> <a href="blogPost-3.html">Blog</a></div>
-        <div class="navTabs"> About</div>
+    <div>
+    <ul>
+        <li><a href="index.html" class="navTabs">Home</a></li>
+        <li><a href="#about" class="navTabs">About</a></li>
+    </ul>
     </div>
-
+    <hr size="20" color="lightgray">
+    <hr size="45" color="white">
+    
+    <h1> Blog Posts </h1>
     <div class="wrapper">
         <div>
             <div class="postWrapper"> 
@@ -111,7 +136,7 @@
                     <a href="blogPost-3.html" class="myButton">Click Here</a>
                 </div>
                 <div> 
-                    <img src="images/favoriteThings.jpeg" width:"120px" height="200px" >
+                    <img src="images/favoriteThings.jpeg" width:"120px" height="200px">
                 </div>
             </div>
         </div>
