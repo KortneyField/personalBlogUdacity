@@ -1,0 +1,44 @@
+.navBar{
+    display:flex;
+    flex-direction: row; /* makes the boxes form a column or row*/
+    align-items: center; /*aligns the boxes in the middle on cross axis*/
+    justify-content: start; /*aligns the boxes in the middle on main axis all the way the right*/
+    /*border: 2px solid yellow;*/
+}
+
+.navTabs{
+        width: 80px;
+        height: 30px;
+        border: 1px solid white;
+        font-size: 20px;
+        text-align: center;
+        background-color: #d2faf7;
+        color: black;
+    }
+
+.navDiv{
+    display:grid;
+    grid-template-columns: 49% 49% 2%;
+    grid-column-gap: 1em;
+    grid-row-gap: 1em;
+    text-align: right;
+    border: 2px solid yellow;
+    align-items: center;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    padding: 8px;
+    background-color:#d2faf7;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    }
